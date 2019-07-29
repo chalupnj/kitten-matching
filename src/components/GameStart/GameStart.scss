@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.EndScreen {
+    text-align: center;
+
+    button {
+        margin-top: 2rem;
+        background-color: #316bd3;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    button:hover {
+        background-color: #FFFFFF;
+        border: 2px solid #316bd3;
+        color: #316bd3;
+    }
+}

@@ -1,10 +1,12 @@
 import React from "react"
 
+import './Scoreboard.scss'
+
 const Scoreboard = ({score}) => {
     return (
         <div className="Scoreboard">
-            <h2>Flip the cards to match the cats.</h2>
-            <h1>Score: {score}</h1>
+            <h2>Flip the cards to match the cats</h2>
+            <h3>Score: {score}</h3>
         </div>
     )
 }

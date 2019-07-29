@@ -75,6 +75,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="App__header">
+        <h1>Kitten Matching Game</h1>
         <Scoreboard
           score={score} 
         />
@@ -98,8 +99,11 @@ const App = () => {
 
 export default App
 
-// TODO: Game ends when all cards are matched...what 
-// should this look like? Easy/Medium/Hard levels based on how many images are
-// chosen at random from the array to be in the game.
+// TODO: put image captions on cards
+//
+// Easy/Medium/Hard levels based on how many images are chosen at random from the array to be in the game.
 
-// 1. Style
+// Future improvements:
+// - Difficulty levels
+// - Timer
+// - Printable certificate for winning

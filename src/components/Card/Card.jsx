@@ -1,8 +1,8 @@
 import React, {useState, Fragment} from "react";
 
-import cardBack from "./card-back.jpg"
+import cardBack from "./cat-pattern.png"
 
-import "./Card.scss";
+import './Card.scss'
 
 const Card = ({catImage, catName, cardClickHandler, catIndex, flipped}) => {
     // State and state set function. useState is a function that gets passed an initial value and returns an array of the state (flipped) and a function to update the state (setFlipped)
@@ -18,7 +18,7 @@ const Card = ({catImage, catName, cardClickHandler, catIndex, flipped}) => {
     return (
         <div className="Card" onClick={flipCard}>
             {flipped ? (
-                <Fragment>
+                <Fragment class="Card__box">
                     <img className="Card__image" src={catImage} />
                     <p className="Card__name">{catName}</p>
                 </Fragment>
