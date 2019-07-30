@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.88ede03c.chunk.css",
-    "main.js": "/static/js/main.e5072e21.chunk.js",
-    "main.js.map": "/static/js/main.e5072e21.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.186b73ee.chunk.js": "/static/js/2.186b73ee.chunk.js",
-    "static/js/2.186b73ee.chunk.js.map": "/static/js/2.186b73ee.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8c13649dd485351877ebd9ad32bc5447.js": "/precache-manifest.8c13649dd485351877ebd9ad32bc5447.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.88ede03c.chunk.css.map": "/static/css/main.88ede03c.chunk.css.map",
-    "static/media/cat-pattern.png": "/static/media/cat-pattern.f6cc3aa1.png"
+    "main.css": "/kitten-matching/static/css/main.88ede03c.chunk.css",
+    "main.js": "/kitten-matching/static/js/main.56210b93.chunk.js",
+    "main.js.map": "/kitten-matching/static/js/main.56210b93.chunk.js.map",
+    "runtime~main.js": "/kitten-matching/static/js/runtime~main.9f51f75f.js",
+    "runtime~main.js.map": "/kitten-matching/static/js/runtime~main.9f51f75f.js.map",
+    "static/js/2.186b73ee.chunk.js": "/kitten-matching/static/js/2.186b73ee.chunk.js",
+    "static/js/2.186b73ee.chunk.js.map": "/kitten-matching/static/js/2.186b73ee.chunk.js.map",
+    "index.html": "/kitten-matching/index.html",
+    "precache-manifest.3bc2d092925ab396c5d8c0236af81880.js": "/kitten-matching/precache-manifest.3bc2d092925ab396c5d8c0236af81880.js",
+    "service-worker.js": "/kitten-matching/service-worker.js",
+    "static/css/main.88ede03c.chunk.css.map": "/kitten-matching/static/css/main.88ede03c.chunk.css.map",
+    "static/media/cat-pattern.png": "/kitten-matching/static/media/cat-pattern.f6cc3aa1.png"
   }
 }
