@@ -1,86 +1,96 @@
-[{
-    "catImage": "../../images/Angeweena-Joween.jpg",
-    "catName": "Angeweena Joween",
-    "selected": false,
-    "matched": false
+const importAll = r => r.keys().map(r)
+
+const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+
+const findCatImage = name => images.find(image => image.includes(name))
+
+console.log(images)
+
+export const cats = [{
+    catImage: findCatImage("Angeweena-Joween"),
+    catName: "Angeweena Joween",
+    selected: false,
+    matched: false
 }, {
-    "catImage": "../../images/Birdie.jpg",
+    "catImage": findCatImage("Birdie"),
     "catName": "Birdie",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Breakfast.jpg",
+    "catImage": findCatImage("Breakfast"),
     "catName": "Breakfast",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Cleo.jpg",
+    "catImage": findCatImage("Cleo"),
     "catName": "Cleo",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Dinner.jpg",
+    "catImage": findCatImage("Dinner"),
     "catName": "Dinner",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Fartima.jpg",
+    "catImage": findCatImage("Fartima"),
     "catName": "Fartima",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Franklin.jpg",
+    "catImage": findCatImage("Franklin"),
     "catName": "Franklin",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Holla.jpg",
+    "catImage": findCatImage("Holla"),
     "catName": "Holla",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Liam.jpg",
+    "catImage": findCatImage("Liam"),
     "catName": "Liam",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Liberace.jpg",
+    "catImage": findCatImage("Liberace"),
     "catName": "Liberace",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Lunch.jpg",
+    "catImage": findCatImage("Lunch"),
     "catName": "Lunch",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Meatloaf.jpg",
+    "catImage": findCatImage("Meatloaf"),
     "catName": "Meatloaf",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Nacho.jpg",
+    "catImage": findCatImage("Nacho"),
     "catName": "Nacho",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Noodle.jpg",
+    "catImage": findCatImage("Noodle"),
     "catName": "Noodle",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Nutella.jpg",
+    "catImage": findCatImage("Nutella"),
     "catName": "Nutella",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Tony.jpg",
+    "catImage": findCatImage("Tony"),
     "catName": "Tony",
     "selected": false,
     "matched": false
 }, {
-    "catImage": "../../images/Ween.jpg",
+    "catImage": findCatImage("Ween"),
     "catName": "Ween",
     "selected": false,
     "matched": false
 }]
+
+export default cats

@@ -82,16 +82,18 @@ const App = () => {
         <button onClick={resetGame}>Reset Game</button>
       </div>
       <div className="App__card-container">
-        {cats.map((cat, index) => (
-          <Card 
-            catName={cat.catName}
-            catImage={cat.catImage}
-            flipped={cat.selected || cat.matched}
-            cardClickHandler={cardClickHandler}
-            catIndex={index}
-            key={index}
-          />
-        ))}
+        {cats.map((cat, index) => {
+          console.log('cat', cat)
+          return (
+            <Card 
+              catName={cat.catName}
+              catImage={cat.catImage}
+              flipped={cat.selected || cat.matched}
+              cardClickHandler={cardClickHandler}
+              catIndex={index}
+              key={index}
+            />
+        )})}
       </div>
     </div>
   )

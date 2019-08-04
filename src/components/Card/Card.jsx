@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from "react";
+import React from "react";
 
 import cardBack from "./cat-pattern.png"
 
@@ -15,15 +15,16 @@ const Card = ({catImage, catName, cardClickHandler, catIndex, flipped}) => {
         }
         // TODO: Add else statement warning for already been clicked
     }
+
     return (
         <div className="Card" onClick={flipCard}>
             {flipped ? (
-                <Fragment class="Card__box">
-                    <img className="Card__image" src={catImage} />
+                <div className="Card__box">
+                    <img className="Card__image" src={catImage} alt='card-back' />
                     <p className="Card__name">{catName}</p>
-                </Fragment>
+                </div>
             ) : (
-                <img className="Card__image" src={cardBack} />                    
+                <img className="Card__image" src={cardBack} alt={catName} />                    
             )}
         </div>
     )

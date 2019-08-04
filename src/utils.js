@@ -1,4 +1,4 @@
-import catsArray from "./cats.json"
+import catsArray from "./cats"
 
 
 // let easyLayout = 9

@@ -14,12 +14,15 @@
     }
 
     &__box &__name {
+        color: #FFFFFF;
+        font-size: 1.5rem; 
         position: absolute;
         text-align: center;
+        text-shadow: 1px;
         margin: 0 auto;
         left: 0;
         right: 0;
-        top: 40%;
+        top: 70%;
         width: 60%;
         z-index: 999; 
     }
