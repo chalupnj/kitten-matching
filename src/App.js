@@ -21,22 +21,18 @@ const App = () => {
     setSelectedCount(updatedCount)
     let updatedCats = cats.map((cat, index) => catIndex === index ? {...cat, selected: true} : cat)
     setCats(updatedCats)
-    console.log("updated cats at beginning", updatedCats)
     // Update the cats array
     // ... is a spread function, it adds everything that it had before back into the object. 
     // Then, we update only flipped. Because if you redefine something that's already there, it overwrites it.
     if (updatedCount === 2) {
       // Make a new array that only has the flipped cats
       const selectedCats = updatedCats.filter(cat => cat.selected)
-      console.log("flipped cats ppleaseeee", selectedCats)
 
       // If it's a match:
       if (selectedCats[0].catName === selectedCats[1].catName) {
-        console.log("WE HAVE A MATCH!!!!")
         // Set matched to true for the selected cats
         updatedCats = updatedCats.map(cat => cat.selected ? {...cat, selected: false, matched: true} : cat)
         updatedCount = 0
-        console.log("updated cats after match", updatedCats)
         setCats(updatedCats)
         setSelectedCount(updatedCount)
         setScore(score + 20)
@@ -56,10 +52,10 @@ const App = () => {
     } 
   }
 
-  const resetGame = () => {
+  const resetGame = (numCats = 10) => {
     setScore(0)
     setSelectedCount(0)
-    setCats(doubleShuffle())
+    setCats(doubleShuffle(numCats))
     setBlockClicks(false)
   }
 
@@ -83,7 +79,6 @@ const App = () => {
       </div>
       <div className="App__card-container">
         {cats.map((cat, index) => {
-          console.log('cat', cat)
           return (
             <Card 
               catName={cat.catName}

@@ -4,8 +4,6 @@ const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/
 
 const findCatImage = name => images.find(image => image.includes(name))
 
-console.log(images)
-
 export const cats = [{
     catImage: findCatImage("Angeweena-Joween"),
     catName: "Angeweena Joween",
@@ -19,6 +17,11 @@ export const cats = [{
 }, {
     "catImage": findCatImage("Breakfast"),
     "catName": "Breakfast",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Chumba"),
+    "catName": "Chumba",
     "selected": false,
     "matched": false
 }, {
@@ -89,6 +92,11 @@ export const cats = [{
 }, {
     "catImage": findCatImage("Ween"),
     "catName": "Ween",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Wumba"),
+    "catName": "Wumba",
     "selected": false,
     "matched": false
 }]

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.EndScreen {
+.GameStart {
     text-align: center;
 
     button {
@@ -15,5 +15,15 @@
         background-color: #FFFFFF;
         border: 2px solid #316bd3;
         color: #316bd3;
+    }
+
+    &__difficulty-radio-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__container {
+            margin: 10px 20px 0 20px;
+        }
     }
 }
