@@ -1,0 +1,29 @@
+.Card {
+    margin: 10px;
+    width: calc(100%/5 - 20px);
+
+    &__box {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px 2px #ccc;
+    }
+
+    &__box &__name {
+        color: #FFFFFF;
+        font-size: 1.5rem; 
+        position: absolute;
+        text-align: center;
+        text-shadow: 1px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 70%;
+        width: 60%;
+        z-index: 999; 
+    }
+}
