@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/kitten-matching/static/css/main.95ea6ecd.chunk.css",
-    "main.js": "/kitten-matching/static/js/main.0dd67ce8.chunk.js",
-    "main.js.map": "/kitten-matching/static/js/main.0dd67ce8.chunk.js.map",
+    "main.css": "/kitten-matching/static/css/main.8a75c526.chunk.css",
+    "main.js": "/kitten-matching/static/js/main.a1ed929a.chunk.js",
+    "main.js.map": "/kitten-matching/static/js/main.a1ed929a.chunk.js.map",
     "runtime~main.js": "/kitten-matching/static/js/runtime~main.9f51f75f.js",
     "runtime~main.js.map": "/kitten-matching/static/js/runtime~main.9f51f75f.js.map",
     "static/js/2.429b015b.chunk.js": "/kitten-matching/static/js/2.429b015b.chunk.js",
     "static/js/2.429b015b.chunk.js.map": "/kitten-matching/static/js/2.429b015b.chunk.js.map",
     "index.html": "/kitten-matching/index.html",
-    "precache-manifest.f268befda2ccb858fdc35c132bbab04b.js": "/kitten-matching/precache-manifest.f268befda2ccb858fdc35c132bbab04b.js",
+    "precache-manifest.16b248e9b53b4d00f402e447f84f48f0.js": "/kitten-matching/precache-manifest.16b248e9b53b4d00f402e447f84f48f0.js",
     "service-worker.js": "/kitten-matching/service-worker.js",
-    "static/css/main.95ea6ecd.chunk.css.map": "/kitten-matching/static/css/main.95ea6ecd.chunk.css.map",
+    "static/css/main.8a75c526.chunk.css.map": "/kitten-matching/static/css/main.8a75c526.chunk.css.map",
     "static/media/Angeweena-Joween.jpg": "/kitten-matching/static/media/Angeweena-Joween.a38c2740.jpg",
     "static/media/Birdie.jpg": "/kitten-matching/static/media/Birdie.9ab76da2.jpg",
     "static/media/Breakfast.jpg": "/kitten-matching/static/media/Breakfast.a06222af.jpg",
+    "static/media/Chumba.jpg": "/kitten-matching/static/media/Chumba.7a100649.jpg",
     "static/media/Cleo.jpg": "/kitten-matching/static/media/Cleo.5a666bd9.jpg",
     "static/media/Dinner.jpg": "/kitten-matching/static/media/Dinner.8e0cb1f3.jpg",
     "static/media/Fartima.jpg": "/kitten-matching/static/media/Fartima.7e9783b1.jpg",
@@ -28,6 +29,7 @@
     "static/media/Nutella.jpg": "/kitten-matching/static/media/Nutella.effbd03e.jpg",
     "static/media/Tony.jpg": "/kitten-matching/static/media/Tony.90d9ad6c.jpg",
     "static/media/Ween.jpg": "/kitten-matching/static/media/Ween.0996506c.jpg",
+    "static/media/Wumba.jpg": "/kitten-matching/static/media/Wumba.01bc7944.jpg",
     "static/media/cat-pattern.png": "/kitten-matching/static/media/cat-pattern.f6cc3aa1.png"
   }
 }

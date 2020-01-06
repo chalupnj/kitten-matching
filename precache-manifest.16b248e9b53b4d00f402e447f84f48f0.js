@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "611e945f3a0a3929f647899acebdd52e",
+    "revision": "c5c634b654288b892d29a17b914f1917",
     "url": "/kitten-matching/index.html"
   },
   {
-    "revision": "bea7e28b14f03d07853e",
-    "url": "/kitten-matching/static/css/main.95ea6ecd.chunk.css"
+    "revision": "23c834344e3cdf3ce90a",
+    "url": "/kitten-matching/static/css/main.8a75c526.chunk.css"
   },
   {
     "revision": "01ea480b0af332c69f23",
     "url": "/kitten-matching/static/js/2.429b015b.chunk.js"
   },
   {
-    "revision": "bea7e28b14f03d07853e",
-    "url": "/kitten-matching/static/js/main.0dd67ce8.chunk.js"
+    "revision": "23c834344e3cdf3ce90a",
+    "url": "/kitten-matching/static/js/main.a1ed929a.chunk.js"
   },
   {
     "revision": "d6c4864aef2eacb4cc5d",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a06222af6e11ad6718efb1f02f870bba",
     "url": "/kitten-matching/static/media/Breakfast.a06222af.jpg"
+  },
+  {
+    "revision": "7a1006494852d12e0a23894e306b8c7f",
+    "url": "/kitten-matching/static/media/Chumba.7a100649.jpg"
   },
   {
     "revision": "5a666bd941fdd0cf2ab02d6ac3c812c3",
@@ -86,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0996506cab4a83e350f970b98624d240",
     "url": "/kitten-matching/static/media/Ween.0996506c.jpg"
+  },
+  {
+    "revision": "01bc794477b11825cde400d76cb0ed70",
+    "url": "/kitten-matching/static/media/Wumba.01bc7944.jpg"
   },
   {
     "revision": "f6cc3aa112f184b9af936c3ebb324226",
