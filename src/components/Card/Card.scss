@@ -18,13 +18,10 @@
         color: #FFFFFF;
         font-size: 1.5rem; 
         position: absolute;
-        text-align: center;
-        text-shadow: 0.0625rem;
         margin: 0 auto;
-        left: 0;
-        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
         top: 70%;
-        width: 60%;
         z-index: 999; 
     }
 

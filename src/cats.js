@@ -6,7 +6,7 @@ const findCatImage = name => images.find(image => image.includes(name))
 
 export const cats = [{
     catImage: findCatImage("Angeweena-Joween"),
-    catName: "Angeweena Joween",
+    catName: "Angeweena",
     selected: false,
     matched: false
 }, {
