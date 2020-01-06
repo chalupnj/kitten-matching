@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployment
+Go to folder in terminal (make sure you're in the master branch) then type:
+
+1. `npm run predeploy`
+1. `npm run deploy`
 
 ## Available Scripts
 
