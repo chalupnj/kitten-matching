@@ -6,12 +6,13 @@ import Scoreboard from "./components/Scoreboard/Scoreboard"
 import {doubleShuffle} from "./utils"
 
 import './App.scss'
+import { blockStatement } from '@babel/types'
 
 const App = () => {
   const [selectedCount, setSelectedCount] = useState(0)
   const [blockClicks, setBlockClicks] = useState(false)
   const [cats, setCats] = useState([])
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState([])
 
   const unmatchedCatCount = cats.filter(cat => !cat.matched).length
 
@@ -59,7 +60,8 @@ const App = () => {
     setBlockClicks(false)
   }
 
-  if (!unmatchedCatCount) {
+  //End of game
+  if (!unmatchedCatCount) { 
     return (
       <GameStart
         score={score}
@@ -71,7 +73,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="App__header">
-        <h1>Kitten Matching Game</h1>
+        <div className="App__intro-title">Kitten Matching Game</div>
         <Scoreboard
           score={score} 
         />
@@ -96,11 +98,8 @@ const App = () => {
 
 export default App
 
-// TODO: put image captions on cards
-//
-// Easy/Medium/Hard levels based on how many images are chosen at random from the array to be in the game.
-
 // Future improvements:
-// - Difficulty levels
 // - Timer
 // - Printable certificate for winning
+// - Scoreboard
+// - Save difficulty

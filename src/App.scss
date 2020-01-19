@@ -16,19 +16,15 @@
             margin: 0 2rem;
         }
     }
+
+    &__intro-title {
+        font-family: "Lato", sans-serif;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
 }
 
-h1 {
-    font-family: "Lato", sans-serif;
-    margin-bottom: 0;
-}
 
-h2 {
-    font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 1rem auto;
-}
 
 button {
     background-color: #FFFFFF;
@@ -40,6 +36,7 @@ button {
     font-size: 1rem;
     padding: 0.7rem 2.5rem;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 button:hover {
