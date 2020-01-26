@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.App { 
+.Game { 
     text-align: center;
     &__card-container {
         display: flex;
@@ -24,23 +24,16 @@
     }
 }
 
-
-
 button {
-    background-color: #FFFFFF;
-    border: 2px solid #316bd3;
-    border-radius: 0.3rem;
-    box-shadow: none;
-    color: #316bd3;
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    padding: 0.7rem 2.5rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #316bd3;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
     text-transform: uppercase;
 }
 
 button:hover {
-    background-color: #316bd3;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border: 2px solid #316bd3;
+    color: #316bd3;
 }

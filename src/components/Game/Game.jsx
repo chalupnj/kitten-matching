@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
 
-import Card from "./components/Card/Card"
-import GameStart from "./components/GameStart/GameStart"
-import Scoreboard from "./components/Scoreboard/Scoreboard"
-import {doubleShuffle} from "./utils"
+import Card from "../Card/Card"
+import GameEnd from "../GameEnd/GameEnd"
+import Scoreboard from "../Scoreboard/Scoreboard"
+import {doubleShuffle} from "../../utils"
 
-import './App.scss'
-import { blockStatement } from '@babel/types'
+import './Game.scss'
 
-const App = () => {
+const Game = () => {
   const [selectedCount, setSelectedCount] = useState(0)
   const [blockClicks, setBlockClicks] = useState(false)
   const [cats, setCats] = useState([])
@@ -63,7 +62,7 @@ const App = () => {
   //End of game
   if (!unmatchedCatCount) { 
     return (
-      <GameStart
+      <GameEnd
         score={score}
         resetGame={resetGame}
       />
@@ -71,15 +70,15 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <div className="App__header">
-        <div className="App__intro-title">Kitten Matching Game</div>
+    <div className="Game">
+      <div className="Game__header">
+        <div className="Game__intro-title">Kitten Matching Game</div>
         <Scoreboard
           score={score} 
         />
         <button onClick={resetGame}>Reset Game</button>
       </div>
-      <div className="App__card-container">
+      <div className="Game__card-container">
         {cats.map((cat, index) => {
           return (
             <Card 
@@ -96,7 +95,7 @@ const App = () => {
   )
 }
 
-export default App
+export default Game
 
 // Future improvements:
 // - Timer
