@@ -2,18 +2,17 @@ import React, {useState} from 'react'
 
 import Card from "../Card/Card"
 import GameEnd from "../GameEnd/GameEnd"
-import Scoreboard from "../Scoreboard/Scoreboard"
 import {doubleShuffle} from "../../utils"
 
 import './Game.scss'
 
-const Game = () => {
+const Game = ({numCats, setGamePlay}) => {
   const [selectedCount, setSelectedCount] = useState(0)
   const [blockClicks, setBlockClicks] = useState(false)
-  const [cats, setCats] = useState([])
-  const [score, setScore] = useState([])
-
+  const [cats, setCats] = useState(doubleShuffle(numCats))
+  const [score, setScore] = useState(0)
   const unmatchedCatCount = cats.filter(cat => !cat.matched).length
+  console.log(unmatchedCatCount)
 
   const cardClickHandler = (catIndex) => {
     if (blockClicks) return
@@ -52,19 +51,23 @@ const Game = () => {
     } 
   }
 
-  const resetGame = (numCats = 10) => {
-    setScore(0)
-    setSelectedCount(0)
-    setCats(doubleShuffle(numCats))
-    setBlockClicks(false)
-  }
-
   //End of game
-  if (!unmatchedCatCount) { 
+  if (!unmatchedCatCount) {
+    const numHighScores = 5
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+    highScores.push({score})
+    const leaderBoard = highScores.sort((a,b) => b.score - a.score)
+    if (leaderBoard.length >= numHighScores) leaderBoard.splice(numHighScores-leaderBoard.length)
+    const newHighScorePlace = leaderBoard.findIndex(leader => !leader.name)
+    if (newHighScorePlace === -1) {
+      localStorage.setItem('highScores', JSON.stringify(leaderBoard))
+    }
     return (
       <GameEnd
+        leaderBoard={leaderBoard}
+        newHighScorePlace={newHighScorePlace}
         score={score}
-        resetGame={resetGame}
+        setGamePlay={setGamePlay}
       />
     )
   }
@@ -72,11 +75,12 @@ const Game = () => {
   return (
     <div className="Game">
       <div className="Game__header">
-        <div className="Game__intro-title">Kitten Matching Game</div>
-        <Scoreboard
-          score={score} 
-        />
-        <button onClick={resetGame}>Reset Game</button>
+        <h1>Kitten Matching Game</h1>
+        <div className="Scoreboard">
+            <h2>Flip the cards to match the cats</h2>
+            <div className="Game__score-display">Score: {score}</div>
+        </div>
+        <button onClick={() => setGamePlay(false)}>Reset Game</button>
       </div>
       <div className="Game__card-container">
         {cats.map((cat, index) => {

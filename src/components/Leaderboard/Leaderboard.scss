@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.Leaderboard {
+    &__score-list {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: .5rem auto;
+        width: 15rem;
+        border-bottom: 1px solid rgb(197, 197, 197);        border-top: 1px solid rgb(197, 197, 197);
+    }
+
+    &__score-row {
+        border-top: 1px solid rgb(197, 197, 197);
+        padding: .5rem;
+    }
+
+    &__place{
+        float: left;
+        max-width: 30%;
+    }
+
+    &__name {
+        margin-left: 3rem;
+        max-width: 40%;
+    }
+
+    &__score {
+        float: right;
+        margin-left: 3rem;
+        max-width: 30%;
+    }
+}

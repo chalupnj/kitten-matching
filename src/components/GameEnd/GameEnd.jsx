@@ -4,18 +4,14 @@ import {difficultyOptions} from "../../utils"
 
 import './GameEnd.scss'
 
-const GameEnd = ({resetGame, score}) => {
-
+const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
     const [leaderName, setLeaderName] = useState('')
-    const highScores = JSON.parse(localStorage.getItem('highScores')) || []
-    console.log('highScores', highScores)
-    console.log('new score', {score})
-    if (score > 0) highScores.push({score})
-    const leaderBoard = highScores.sort((a,b) => b.score - a.score)
-    if (leaderBoard.length === 11) leaderBoard.splice(-1)
-    console.log('leaderBoard', leaderBoard)
-    const newHighScorePlace = leaderBoard.findIndex(leader => !leader.name)
-    console.log('newHighScorePlace', newHighScorePlace)
+    const [showEnterInitials, setShowEnterInitials] = useState(false)
+
+    useEffect(() => {
+        setShowEnterInitials(newHighScorePlace !== -1)
+        console.log('newHighScorePlace', newHighScorePlace)
+    }, [newHighScorePlace])
 
     const onChangeLeaderName = e => {
         setLeaderName(e.target.value)
@@ -23,27 +19,31 @@ const GameEnd = ({resetGame, score}) => {
     const onSaveHighScore = () => {
         leaderBoard[newHighScorePlace].name = leaderName
         localStorage.setItem('highScores', JSON.stringify(leaderBoard))
+        setShowEnterInitials(false)
     }
 
     return (
         <div>
-            <div className="GameStart__main-title">CONGRATULATIONS!! You won!</div>
-            <div className="GameStart__score-caption">Final Score:</div>
-            <div className="GameStart__final-score-container">
-                <span className="GameStart__final-score-container__final-score">
+            <h1>CONGRATULATIONS!! You won!</h1>
+            <div className="GameEnd__score-caption">Final Score:</div>
+            <div className="GameEnd__final-score-container">
+                <span className="GameEnd__final-score-container__final-score">
                     {score}
                 </span>
             </div>
-            {newHighScorePlace !== -1 && (
+            {showEnterInitials && (
                 <div>
-                    <div className="GameStart__high-score">New high score!</div>
-                    <div className="GameStart__save-high-score">
-                        <div className="GameStart__save-high-score__initial-label">Enter your initials:</div>
-                        <input onChange={onChangeLeaderName}className="GameStart__save-high-score__leaderboard-name" />
+                    <div className="GameEnd__high-score">New high score!</div>
+                    <div className="GameEnd__save-high-score">
+                        <div className="GameEnd__save-high-score__initial-label">Enter your initials:</div>
+                        <input maxlength="4" onChange={onChangeLeaderName}className="GameEnd__save-high-score__leaderboard-name" />
                         <button onClick={onSaveHighScore}>Save score</button>
                     </div>
                 </div>
             )}
+            <div>
+                <button onClick={() => setGamePlay(false)}>Play Again</button>
+            </div>
         </div>
     )
 }

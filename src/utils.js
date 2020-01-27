@@ -28,3 +28,8 @@ export const doubleShuffle = numCats => {
    const doubleCats = cats.concat(cats)
    return doubleCats.sort(() => 0.5 - Math.random())
 }
+
+// Gets array of high scores from local storage and orders them from largest to smallest if not already ordered
+export const getOrderedLeaderboard = () => {
+   return JSON.parse(localStorage.getItem('highScores')).sort((a,b) => b.score - a.score)
+}

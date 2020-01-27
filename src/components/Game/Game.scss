@@ -2,6 +2,7 @@
 
 .Game { 
     text-align: center;
+
     &__card-container {
         display: flex;
         flex-direction: row;
@@ -17,23 +18,9 @@
         }
     }
 
-    &__intro-title {
+    &__score-display {
         font-family: "Lato", sans-serif;
-        font-size: 3rem;
-        margin-bottom: 0;
+        font-size: 2rem;
+        margin: 1.5rem auto;
     }
-}
-
-button {
-    margin-top: 2rem;
-    background-color: #316bd3;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-button:hover {
-    background-color: #FFFFFF;
-    border: 2px solid #316bd3;
-    color: #316bd3;
 }
