@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import Leaderboard from "./Leaderboard/Leaderboard"
-import {difficultyOptions} from "../utils"
+import {difficultyOptions, getOrderedLeaderboard} from "../utils"
 
 import './App.scss'
 import Game from "./Game/Game"
@@ -11,7 +11,13 @@ const App = () => {
     const [difficulty, setDifficulty] = useState('easy')
     const [gamePlay, setGamePlay] = useState(false)
 
-    // TODO: change line 33 (score ?) area so that if you get a score of <=0, you get a Try Again message.
+    const handleDifficultyChange = value => {
+        console.log(value)
+        setDifficulty(value)
+    }
+
+    const highScores = getOrderedLeaderboard()
+
     return (
 
         <div className="App">
@@ -26,26 +32,32 @@ const App = () => {
                         <h1>Kitten Matching Game</h1>
                         <h2>A feline friendly game made with React</h2>
                     </div>
-                    <Leaderboard />
                     
-                    <form className="App__difficulty-radio-buttons">
+                    <ul className="App__difficulty-form">
                         {difficultyOptions.map(d => (
-                            <div key={d.label} className="App__difficulty-radio-buttons__container">
-                                <label>
-                                    <input
-                                        type="radio"
-                                        name="difficulty"
-                                        value={d.label}
-                                        checked={d.value === difficulty}
-                                        onChange={() => setDifficulty(d.value)}
-                                    />
-                                    {d.label}
-                                </label>
-                            </div>
+                            <li 
+                                key={d.label} className="App__difficulty-form__container"
+                                onClick={() => handleDifficultyChange(d.value)}
+                            >
+                                <input
+                                    id={`radio-button-${d.value}`}
+                                    type="radio"
+                                    name="difficulty"
+                                    value={d.label}
+                                    checked={d.value === difficulty}
+                                />
+                                <label htmlFor={`radio-button-${d.value}`}>{d.label}</label>
+                            </li>
                         ))}
-                    </form> 
+                    </ul> 
 
                     <button onClick={() => setGamePlay(true)}>Play</button>
+                    
+                    {highScores.length > 0 && 
+                        <Leaderboard
+                            highScores={highScores}
+                        />
+                    }
                 </>
             )}
         </div>

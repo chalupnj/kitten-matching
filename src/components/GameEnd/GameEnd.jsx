@@ -20,6 +20,7 @@ const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
         leaderBoard[newHighScorePlace].name = leaderName
         localStorage.setItem('highScores', JSON.stringify(leaderBoard))
         setShowEnterInitials(false)
+        setGamePlay(false)
     }
 
     return (
@@ -35,14 +36,21 @@ const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
                 <div>
                     <div className="GameEnd__high-score">New high score!</div>
                     <div className="GameEnd__save-high-score">
-                        <div className="GameEnd__save-high-score__initial-label">Enter your initials:</div>
-                        <input maxlength="4" onChange={onChangeLeaderName}className="GameEnd__save-high-score__leaderboard-name" />
+                        <div className="GameEnd__save-high-score__initial-container">
+                            <label htmlFor="initial-input">Enter your name:</label>
+                            <input 
+                                autoFocus="autofocus"
+                                id="initial-input" 
+                                maxlength="9" 
+                                onChange={onChangeLeaderName}
+                            />
+                        </div>
                         <button onClick={onSaveHighScore}>Save score</button>
                     </div>
                 </div>
             )}
             <div>
-                <button onClick={() => setGamePlay(false)}>Play Again</button>
+                <button id="play-again" onClick={() => setGamePlay(false)}>Play Again</button>
             </div>
         </div>
     )

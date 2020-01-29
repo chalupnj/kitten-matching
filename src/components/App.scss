@@ -4,12 +4,12 @@
     button {
         background-color: #316bd3;
         border: 2px solid #316bd3;
-        border-radius: 0.3rem;
+        border-radius: 0.5rem;
         box-shadow: none;
         color: #FFFFFF;
         font-family: "Lato", sans-serif;
         font-size: 1rem;
-        padding: 0.7rem 2.5rem;
+        padding: 1rem 3rem;
         margin: 2rem;
         text-transform: uppercase;
     }
@@ -19,14 +19,54 @@
         border: 2px solid #316bd3;
         color: #316bd3;
     }
-
-    &__difficulty-radio-buttons {
+    
+    &__difficulty-form {
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 0.5rem;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: 2rem auto 0;
+        max-width: 30%;
+        padding: 0;
 
         &__container {
-            margin: 10px 20px 0 20px;
+            cursor: pointer;
+            display: inline-block;
+            width: calc(100%/3);
+
+            input[type="radio"]:checked + label {
+                border: 1px solid #316bd3;
+                border-radius: 0.5rem;
+                color: #316bd3;
+                font-weight: 700;
+            }
+            
+            label {
+                box-sizing: border-box;
+                display: block;
+                padding: 1rem 2rem;
+                width: 100%;
+
+                &:hover {
+                    border: 1px dashed #31add3;
+                    border-radius: 0.5rem;
+                    color: #31add3;
+                    font-weight: 500;
+                }
+            }
         }
     }
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+
+// input[type="radio"]:checked + label {
+//     background: red;
+//     border: 1px solid #316bd3;
+//     border-radius: 1rem;
+//     z-index: 100;
+// }

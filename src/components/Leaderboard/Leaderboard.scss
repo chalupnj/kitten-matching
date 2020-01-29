@@ -2,7 +2,7 @@
 
 .Leaderboard {
     &__score-list {
-        font-family: "Lato", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 1rem;
         font-weight: 300;
         margin: .5rem auto;
@@ -23,6 +23,7 @@
     &__name {
         margin-left: 3rem;
         max-width: 40%;
+        text-transform: capitalize;
     }
 
     &__score {
