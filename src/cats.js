@@ -30,6 +30,16 @@ export const cats = [{
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Cookie"),
+    "catName": "Cookie",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Cupcake"),
+    "catName": "Cupcake",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Dinner"),
     "catName": "Dinner",
     "selected": false,
