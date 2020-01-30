@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from "react"
 
-import {difficultyOptions} from "../../utils"
-
 import './GameEnd.scss'
 
 const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
@@ -10,7 +8,8 @@ const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
 
     useEffect(() => {
         setShowEnterInitials(newHighScorePlace !== -1)
-        console.log('newHighScorePlace', newHighScorePlace)
+        console.log('newHighScorePlace', newHighScorePlace)        
+
     }, [newHighScorePlace])
 
     const onChangeLeaderName = e => {
@@ -41,7 +40,7 @@ const GameEnd = ({leaderBoard, newHighScorePlace, score, setGamePlay}) => {
                             <input 
                                 autoFocus="autofocus"
                                 id="initial-input" 
-                                maxlength="9" 
+                                maxLength="9" 
                                 onChange={onChangeLeaderName}
                             />
                         </div>

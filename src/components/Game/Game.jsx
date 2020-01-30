@@ -57,7 +57,7 @@ const Game = ({numCats, setGamePlay}) => {
     const highScores = JSON.parse(localStorage.getItem('highScores')) || []
     highScores.push({score})
     const leaderBoard = highScores.sort((a,b) => b.score - a.score)
-    if (leaderBoard.length >= numHighScores) leaderBoard.splice(numHighScores-leaderBoard.length)
+    if (leaderBoard.length >= numHighScores) leaderBoard.length = (numHighScores)
     const newHighScorePlace = leaderBoard.findIndex(leader => !leader.name)
     if (newHighScorePlace === -1) {
       localStorage.setItem('highScores', JSON.stringify(leaderBoard))
@@ -80,7 +80,7 @@ const Game = ({numCats, setGamePlay}) => {
             <h2>Flip the cards to match the cats</h2>
             <div className="Game__score-display">Score: {score}</div>
         </div>
-        <button onClick={() => setGamePlay(false)}>Reset Game</button>
+        <button id="reset-button" onClick={() => setGamePlay(false)}>Reset Game</button>
       </div>
       <div className="Game__card-container">
         {cats.map((cat, index) => {
@@ -104,5 +104,4 @@ export default Game
 // Future improvements:
 // - Timer
 // - Printable certificate for winning
-// - Scoreboard
 // - Save difficulty

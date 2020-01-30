@@ -1,6 +1,14 @@
 .App {
     text-align: center;
 
+    @media screen and (max-width: 1200px) {
+        // font-size: 14px;
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
+    }
+
     button {
         background-color: #316bd3;
         border: 2px solid #316bd3;
@@ -30,6 +38,22 @@
         max-width: 30%;
         padding: 0;
 
+        @media screen and (max-width: 1200px) {
+            max-width: 40%;
+        }
+
+        @media screen and (max-width: 950px) {
+            max-width: 50%;
+        }
+
+        @media screen and (max-width: 640px) {
+            max-width: 75%;
+        }
+        
+        @media screen and (max-width: 550px) {
+            max-width: 80%;
+        }
+
         &__container {
             cursor: pointer;
             display: inline-block;
@@ -47,6 +71,10 @@
                 display: block;
                 padding: 1rem 2rem;
                 width: 100%;
+
+                @media screen and (max-width: 550px) {
+                    padding: 1rem 1rem;
+                }
 
                 &:hover {
                     border: 1px dashed #31add3;
