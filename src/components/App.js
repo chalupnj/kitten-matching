@@ -51,8 +51,8 @@ const App = () => {
                         ))}
                     </ul> 
 
-                    <button onClick={() => setGamePlay(true)}>Play</button>
-                    
+                    <button id="play-button" onClick={() => setGamePlay(true)}>Play</button>
+                                        
                     {highScores.length > 0 && 
                         <Leaderboard
                             highScores={highScores}

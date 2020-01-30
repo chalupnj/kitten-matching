@@ -77,7 +77,7 @@ const Game = ({numCats, setGamePlay}) => {
       <div className="Game__header">
         <h1>Kitten Matching Game</h1>
         <div className="Scoreboard">
-            <h2>Flip the cards to match the cats</h2>
+            <h2>Flip the cards to match the foster kittens</h2>
             <div className="Game__score-display">Score: {score}</div>
         </div>
         <button id="reset-button" onClick={() => setGamePlay(false)}>Reset Game</button>
