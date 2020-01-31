@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ee9f9854f6aa41368c92402d03feb8f",
+    "revision": "20ff19412edbb8dcb3530d23523e93f9",
     "url": "/kitten-matching/index.html"
   },
   {
-    "revision": "fa68276dd15ba26e15f1",
-    "url": "/kitten-matching/static/css/main.9c91562b.chunk.css"
+    "revision": "495535abc7b0f13fbd1c",
+    "url": "/kitten-matching/static/css/main.2b1c1202.chunk.css"
   },
   {
-    "revision": "3f4b2590803f36799f75",
-    "url": "/kitten-matching/static/js/2.a0a146f3.chunk.js"
+    "revision": "cbab8804b7404ec30e9a",
+    "url": "/kitten-matching/static/js/2.48c735ce.chunk.js"
   },
   {
-    "revision": "fa68276dd15ba26e15f1",
-    "url": "/kitten-matching/static/js/main.496c2b79.chunk.js"
+    "revision": "d705cb622423d72c5defbf368ca70dcc",
+    "url": "/kitten-matching/static/js/2.48c735ce.chunk.js.LICENSE"
   },
   {
-    "revision": "d6c4864aef2eacb4cc5d",
-    "url": "/kitten-matching/static/js/runtime~main.9f51f75f.js"
+    "revision": "495535abc7b0f13fbd1c",
+    "url": "/kitten-matching/static/js/main.4579c2b2.chunk.js"
+  },
+  {
+    "revision": "bbf431004c285be868a8",
+    "url": "/kitten-matching/static/js/runtime-main.797c0db7.js"
   },
   {
     "revision": "a38c2740f1c8531b45ba4d939530d093",

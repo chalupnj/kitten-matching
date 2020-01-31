@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/kitten-matching/static/css/main.9c91562b.chunk.css",
-    "main.js": "/kitten-matching/static/js/main.496c2b79.chunk.js",
-    "main.js.map": "/kitten-matching/static/js/main.496c2b79.chunk.js.map",
-    "runtime~main.js": "/kitten-matching/static/js/runtime~main.9f51f75f.js",
-    "runtime~main.js.map": "/kitten-matching/static/js/runtime~main.9f51f75f.js.map",
-    "static/js/2.a0a146f3.chunk.js": "/kitten-matching/static/js/2.a0a146f3.chunk.js",
-    "static/js/2.a0a146f3.chunk.js.map": "/kitten-matching/static/js/2.a0a146f3.chunk.js.map",
+    "main.css": "/kitten-matching/static/css/main.2b1c1202.chunk.css",
+    "main.js": "/kitten-matching/static/js/main.4579c2b2.chunk.js",
+    "main.js.map": "/kitten-matching/static/js/main.4579c2b2.chunk.js.map",
+    "runtime-main.js": "/kitten-matching/static/js/runtime-main.797c0db7.js",
+    "runtime-main.js.map": "/kitten-matching/static/js/runtime-main.797c0db7.js.map",
+    "static/js/2.48c735ce.chunk.js": "/kitten-matching/static/js/2.48c735ce.chunk.js",
+    "static/js/2.48c735ce.chunk.js.map": "/kitten-matching/static/js/2.48c735ce.chunk.js.map",
     "index.html": "/kitten-matching/index.html",
-    "precache-manifest.60bdb4e834e628f36546408e4e4d773f.js": "/kitten-matching/precache-manifest.60bdb4e834e628f36546408e4e4d773f.js",
+    "precache-manifest.091467f63d76ecb003b9b1f4b017b309.js": "/kitten-matching/precache-manifest.091467f63d76ecb003b9b1f4b017b309.js",
     "service-worker.js": "/kitten-matching/service-worker.js",
-    "static/css/main.9c91562b.chunk.css.map": "/kitten-matching/static/css/main.9c91562b.chunk.css.map",
+    "static/css/main.2b1c1202.chunk.css.map": "/kitten-matching/static/css/main.2b1c1202.chunk.css.map",
+    "static/js/2.48c735ce.chunk.js.LICENSE": "/kitten-matching/static/js/2.48c735ce.chunk.js.LICENSE",
     "static/media/Angeweena-Joween.jpg": "/kitten-matching/static/media/Angeweena-Joween.a38c2740.jpg",
     "static/media/Birdie.jpg": "/kitten-matching/static/media/Birdie.9ab76da2.jpg",
     "static/media/Breakfast.jpg": "/kitten-matching/static/media/Breakfast.a06222af.jpg",
@@ -33,5 +34,11 @@
     "static/media/Ween.jpg": "/kitten-matching/static/media/Ween.0996506c.jpg",
     "static/media/Wumba.jpg": "/kitten-matching/static/media/Wumba.01bc7944.jpg",
     "static/media/cat-pattern.png": "/kitten-matching/static/media/cat-pattern.f6cc3aa1.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.797c0db7.js",
+    "static/js/2.48c735ce.chunk.js",
+    "static/css/main.2b1c1202.chunk.css",
+    "static/js/main.4579c2b2.chunk.js"
+  ]
 }
