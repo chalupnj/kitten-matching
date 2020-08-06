@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kitten-matching/precache-manifest.091467f63d76ecb003b9b1f4b017b309.js"
+  "/kitten-matching/precache-manifest.1e7fd00a2d52a26f8f652d4b3ac26609.js"
 );
 
 self.addEventListener('message', (event) => {
