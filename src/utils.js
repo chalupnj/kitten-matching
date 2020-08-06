@@ -31,5 +31,5 @@ export const doubleShuffle = numCats => {
 
 // Gets array of high scores from local storage and orders them from largest to smallest if not already ordered
 export const getOrderedLeaderboard = () => {
-   return JSON.parse(localStorage.getItem('highScores')).sort((a,b) => b.score - a.score)
+   return JSON.parse(localStorage.getItem('highScores'))?.sort((a,b) => b.score - a.score) || []
 }

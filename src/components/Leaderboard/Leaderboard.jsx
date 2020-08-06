@@ -4,7 +4,7 @@ import './Leaderboard.scss'
 
 const Leaderboard = ({highScores}) => (
     <>
-        <h3>High Scores</h3>
+        <h3>Your High Scores</h3>
         <div className="Leaderboard__score-list">
             {highScores.map((row, index) => (
                 <div

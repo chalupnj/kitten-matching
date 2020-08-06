@@ -20,6 +20,11 @@ export const cats = [{
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Chamomile"),
+    "catName": "Chamomile",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Chumba"),
     "catName": "Chumba",
     "selected": false,
@@ -35,13 +40,28 @@ export const cats = [{
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Cow"),
+    "catName": "Cow",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Cupcake"),
     "catName": "Cupcake",
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Dilly"),
+    "catName": "Dilly",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Dinner"),
     "catName": "Dinner",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Dreamsicle"),
+    "catName": "Dreamsicle",
     "selected": false,
     "matched": false
 }, {
@@ -75,6 +95,11 @@ export const cats = [{
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Marmalade"),
+    "catName": "Marmalade",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Meatloaf"),
     "catName": "Meatloaf",
     "selected": false,
@@ -95,8 +120,23 @@ export const cats = [{
     "selected": false,
     "matched": false
 }, {
+    "catImage": findCatImage("Skunk"),
+    "catName": "Skunk",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Sure-Bert"),
+    "catName": "Sure Bert",
+    "selected": false,
+    "matched": false
+}, {
     "catImage": findCatImage("Tony"),
     "catName": "Tony",
+    "selected": false,
+    "matched": false
+}, {
+    "catImage": findCatImage("Twisty"),
+    "catName": "Twisty",
     "selected": false,
     "matched": false
 }, {
